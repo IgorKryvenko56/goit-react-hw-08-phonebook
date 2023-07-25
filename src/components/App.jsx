@@ -6,13 +6,7 @@ import Filter from './Filter/Filter';
 import { Container, PhonebookImage } from './App.styled';
 import phonebookImage from '../asset/phonebook.png';
 import { fetchContacts } from 'redux/operations';
-import {
-  selectIsLoading,
-  // selectContacts,
-  selectError,
-} from '../redux/contactsSlice';
-// import { persistor } from '../redux/store';
-
+import {selectIsLoading, selectError,} from '../redux/contactsSlice';
 
 const App = () => {
   const isLoading = useSelector(selectIsLoading);
