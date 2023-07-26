@@ -6,7 +6,9 @@ import Filter from './Filter/Filter';
 import { Container, PhonebookImage } from './App.styled';
 import phonebookImage from '../asset/phonebook.png';
 import { fetchContacts } from 'redux/operations';
-import {selectIsLoading, selectError,} from '../redux/contactsSlice';
+import {selectIsLoading, selectError } from '../redux/contactsSlice';
+
+
 
 const App = () => {
   const isLoading = useSelector(selectIsLoading);
@@ -38,17 +40,5 @@ const App = () => {
 
  export default App;
 
-// import * as React from 'react';
 
-// // 1. import `ChakraProvider` component
-// import { ChakraProvider } from '@chakra-ui/react';
-
-// function App() {
-//   // 2. Wrap ChakraProvider at the root of your app
-//   return (
-//     <ChakraProvider>
-//       <TheRestOfYourApplication />
-//     </ChakraProvider>
-//   );
-// }
 
